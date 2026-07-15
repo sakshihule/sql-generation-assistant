@@ -227,7 +227,4 @@ The application handles:
 ## Author
 
 Sakshi Hule
-
-Bachelor of Engineering (Computer Engineering)
-
-Mumbai, India
+Computer Engineering graduate
