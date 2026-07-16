@@ -15,7 +15,11 @@ def run_sql(query):
         # Close connection
         conn.close()
 
-        return rows
+        return {
+            "success": True,
+            "message": "SQL query executed successfully.",
+            "data": rows
+        }
 
     except Exception as e:
         return {

@@ -34,6 +34,9 @@ INVALID_QUERY
 6. Return ONLY the SQL query or INVALID_QUERY.
 7. Do not explain anything.
 8. Do not use markdown.
+9. For text comparisons (such as city, department, or name), generate case-insensitive SQL using LOWER().
+Example:
+SELECT * FROM employees WHERE LOWER(city) = LOWER('Mumbai');
 """
 
     response = client.chat.completions.create(

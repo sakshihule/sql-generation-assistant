@@ -32,8 +32,8 @@ def query_database(request: QueryRequest):
         
         if sql == "INVALID_QUERY":
             return {"success": False, 
-              "message": "Invalid query generated."}
-              
+                    "message": "Invalid query generated."}
+
         is_valid, message = validate_sql(sql)
 
         if not is_valid:
